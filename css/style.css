@@ -127,7 +127,7 @@ footer a{
 }
 
 
-/*main*/
+/*body*/
 .text{
     text-align: center;
     display: table-cell;
@@ -188,9 +188,33 @@ footer a{
     background-size: cover;
     height: 700px;
     display: table;
-
 }
 
+/*media*/
+.media-image{
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    background-image: url("../images/media/media.jpg");
+    /* Parallax effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    display: table;
+}
+
+.title-photos{
+    grid-row: 3/4;
+}
+
+photos{
+    grid-row: 4/5;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    flex-flow: row wrap;
+}
 
 
 
