@@ -15,41 +15,43 @@
         <div class="skip"><a href="#main">Skip to Main Content</a></div>
         <div class="container">
             
-            <div class="nav">
-                <nav>
-                    <ul>
-                        <li><a class="logo" href="#"><img src="images/home/logo.png" alt="Revolution logo"></a></li>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="media.html">Media</a></li>
-                        <li><a href="members.html">Members</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
+            <nav>
+                <a id="logo" href="#"><img src="images/home/logo.png" alt="Revolution logo"/></a>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="members.html">Members</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="contact-image" title = "Former Revolution President gives a speech on stage">
+                <div class="text">
+                    <h1>Contact</h1>
+                </div>
             </div>
             
-            <header id="main">
-                <h1>Contact</h1>
-                <img class="photo" src="images/contact/contact.jpg" alt="Revolution ex-president gives a speech on stage"/>
-            </header>
             
             <div class="social">
-                <a href="https://www.facebook.com/Revolution.Chinese.Yoyo/" target="_blank" class="fab fa-facebook-square"></a>
-                <a href="https://www.instagram.com/revolutionyoyo/" target="_blank" class="fab fa-instagram"></a>
-                <a href="https://www.youtube.com/user/diabolorevolution" target="_blank" class="fab fa-youtube"></a>
+                <a href="https://www.facebook.com/Revolution.Chinese.Yoyo/" target="_blank" class="fab fa-facebook-square fa-2x"> <p> @Revolution.Chinese.Yoyo </p> </a>
+                <a href="https://www.instagram.com/revolutionyoyo/" target="_blank" class="fab fa-instagram fa-2x"> <p>@revolutionyoyo</p> </a>
+                <a href="https://www.youtube.com/user/diabolorevolution" target="_blank" class="fab fa-youtube fa-2x"> <p> @diabolorevolution </p> </a>
             </div>
             
-            <div class="contact">
-                 <form action="https://formspree.io/kevinche@umich.edu" method="POST" />
+            <div class="contactform">
+                 <form action="https://formspree.io/kevinche@umich.edu" method="POST">
                     <fieldset> 
-                        <legend>Personal Information:</legend>
-                        <label for="name">Name</label>
-                        <input type="text" id = "name" placeholder="Colleen van Lent"><br/>
-                        <label> Email: 
-                            <input type="email" value = "email@umich.edu">
-                        </label><br/>
-                        <label for="birth">Date of birth:</label>
-                        <input type="date" id = "birth"><br>
-                        <input type = "submit" value = "Save!">
+                        <legend><h2>Contact Form</h2></legend>
+                        <label for="Name">Name:</label>
+                            <input type="text" id = "name"><br/>
+                        <label for="emailaddress">Email Address:</label>
+                            <input type="email" if = "email"><br/>
+                        <label for="subject">Subject:</label>
+                            <input type="text" id = "subject"><br>
+                        <label for="message">Message:</label>
+                            <input type="textarea" id = "message"><br>
+                        
+                        <input type = "submit" value = "Send">
                     </fieldset>
                 </form> 
             </div>

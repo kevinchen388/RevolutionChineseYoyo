@@ -275,6 +275,7 @@ footer a{
     display: flex;
     padding: 5px;
     flex-flow: row wrap;
+    justify-content: center;
 }
 
 .person{
@@ -302,29 +303,86 @@ footer a{
     grid-row: 6/7;
 }
 
-/*Form*/
-/*
-input{
-	width: 35%;
-	position: absolute;
-	left: 150px;
+
+/*contact*/
+.contact-image{
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    background-image: url("../images/contact/contact.jpg");
+    /* Parallax effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    display: table;
 }
-label{
-	font-family: Cursive;
+
+.social{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    display: inline;
+    text-decoration: none;
+    text-align: center;
+}
+
+.social a{
+    margin-top: 10px;
+    padding: 10px;
+    color: blueviolet;
+    text-decoration: none;
+}
+
+.social a p{
+    vertical-align:middle;
+    display: inline;
+    font-size: 20px;
+}
+
+/*Form*/
+.contactform{
+    grid-column: 2/3;
+    grid-row: 4/5;
+    display: inline-block;
+}
+
+.contactform legend{
+    margin: 0 auto;
+}
+
+input{
+	width: 45%;
+	position: absolute;
+    left: 265px;
 }
 
 input:focus{
-	background-color:lightgrey;
+	background-color:paleturquoise;
+    border: 1px solid green;
 }
 
 fieldset{
-	width: 50%;
+    width: 475px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.contactform label{
+    margin-bottom: 5px;
+}
+
+.contactform input{
+    margin-bottom: 5px;
+}
+
+input[type=textarea] {
+    height: 100px;
 }
 
 input[type=submit] {
-	margin-top:25px;
-    padding:5px 15px; 
-    background:#4a89c3; 
+	margin-top: 100px;
+    padding: 5px 15px; 
+    background: blue; 
     border:2px solid lightgrey;
     cursor:pointer;
     -webkit-border-radius: 5px;
@@ -332,22 +390,15 @@ input[type=submit] {
     color:white;
 }
 
+input[type=submit]:hover {
+    background: pink;
+}
+
 form{
-	margin-bottom: 100px;
+	margin-bottom: 150px;
 }
 
-.fancy{
-	color: red;
-	font-family: Cursive;
-	border-radius: 10px;
-	border: 2px solid green;
-}
 
-form p{
-	font-size: 150%;
-}
-    
-*/
 
 
 /*Advanced CSS*/
