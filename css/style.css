@@ -77,7 +77,7 @@ img{
 nav{
     grid-column: 1/-1;
     grid-row: 1/2;
-    background-color: rgba(28,28,28,0);
+    background-color: transparent;
     padding: 15px; 
     justify-content: center;
     align-content: center;
