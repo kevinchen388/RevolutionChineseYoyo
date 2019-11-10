@@ -559,121 +559,132 @@ $stroke-step: 7%;
 
 
 
+/*------------------------------------*/
 
-
-
-
-
-/*DESKTOP SCREEN*/
+/*TABLET SCREEN*/
 @media screen and (min-width: 800px) {
-    
-h1{
-    font-size: 80px;
-}
 
-h2{
-    font-size: 50px;
-}
-    
-img{
-    width: 350px;
-}
-  
-/*grid container*/
-.container{
-    grid-template-columns: 15% 70% 15%;   
-}
+    h1{
+        font-size: 80px;
+    }
 
-/*nav & footer*/
-nav{
-    padding: 20px; 
-    display: flex;
-}
-    
-nav ul{
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    margin-right: 5%;
-}
+    h2{
+        font-size: 50px;
+    }
 
-nav #logo{
-    display: inline;
-    flex: 1 1 auto;
-    margin-left: 5%;
-}
-    
-nav #logo img{
-    width: 108px;
-    height: auto;
-    padding-bottom: 0px;
-}
+    img{
+        width: 350px;
+    }
 
-nav li{
-    display: inline-block;
-    padding-left: 35px;
-}
-    
+    /*grid container*/
+    .container{
+        grid-template-columns: 15% 70% 15%;   
+    }
 
-/*body*/
-.text{
-    padding: 0 25vw;
-}
+    /*nav & footer*/
+    nav{
+        padding: 20px; 
+        display: flex;
+    }
 
-.cover-image{
-    height: 800px;
-}
+    nav ul{
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        margin-right: 5%;
+    }
 
-.about-image{
-    height: 800px;
-}
+    nav #logo{
+        display: inline;
+        flex: 1 1 auto;
+        margin-left: 5%;
+    }
 
-.performance-image{
-    height: 800px;
-}
+    nav #logo img{
+        width: 108px;
+        height: auto;
+        padding-bottom: 0px;
+    }
 
-.yotonix-image{
-    height: 800px;
-}
-    
-/*media*/
-.videos iframe{
-    width: 350px;
-    height: 280px;
-}
-    
-/*members*/
-.person p{
-    max-width: 270px;
-    margin: 0 auto;
-}
-
-.person img{
-    width: 260px;
-}
-    
-.alumni{
-    padding: 0vw;
-    padding-top: 10px;
-}
+    nav li{
+        display: inline-block;
+        padding-left: 35px;
+    }
 
 
-/*contact*/
-     
-.contactform{
-    margin: 10px;
-    margin-bottom: 50px;
-}
+    /*body*/
+    .text{
+        padding: 0 25vw;
+    }
 
-fieldset{
-    width: 70%;
-    text-align: center;
-    margin: 0 auto;
-}
-   
-    
+    .cover-image{
+        height: 800px;
+    }
+
+    .about-image{
+        height: 800px;
+    }
+
+    .performance-image{
+        height: 800px;
+    }
+
+    .yotonix-image{
+        height: 800px;
+    }
+
+    /*media*/
+    .videos iframe{
+        width: 350px;
+        height: 280px;
+    }
+
+    /*members*/
+    .person p{
+        max-width: 255px;
+        margin: 0 auto;
+    }
+
+    .person img{
+        width: 255px;
+    }
+
+    .alumni{
+        padding: 0vw;
+        padding-top: 10px;
+    }
+
+
+    /*contact*/
+
+    .contactform{
+        margin: 10px;
+        margin-bottom: 50px;
+    }
+
+    fieldset{
+        width: 90%;
+        text-align: center;
+        margin: 0 auto;
+    }
     
 }  /*End the media query*/
+
+
+
+/*------------------------------------*/
+
+/*DESKTOP SCREEN*/
+@media screen and (min-width: 1200px) {
+    
+    /*contact*/
+    fieldset{
+        width: 70%;
+    }
+
+} /*End the media query*/
+
+
 
 /*------------------------------------*/
 
@@ -689,11 +700,13 @@ fieldset{
         position: absolute;
         top: -40px;
         -webkit-transition: initial;
-        transition: initial;/* Your code here - set to default setting */
+        transition: initial;
         z-index: 1;
     }
 
-    .skip a:focus{
-        top:0;
+    
+    .title{
+        -webkit-transition: initial;
+        transition: initial;
     }
 }
