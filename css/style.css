@@ -28,6 +28,7 @@ h3{
     font-family: 'Open Sans Condensed', sans-serif;
     font-weight: 700;
     margin-bottom: 2px;
+    margin-top: 15px;
 }
 
 p{
@@ -367,9 +368,9 @@ footer p{
 .alumni{
     grid-column: 2/3;
     grid-row: 6/7;
-    padding: 2vw;
+    padding: 0 2vw;
     margin: 0 auto;
-      margin-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .alumni ul{
@@ -418,7 +419,7 @@ footer p{
 .social a{
     display: block;
     margin: 10px;
-    color: royalblue;
+    color: #1E46BE;
     text-decoration: none;
 }
 
@@ -429,7 +430,7 @@ footer p{
 }
 
 .social a:hover{
-    color: #7b97ea;
+    color: #587ded;
 }
 
 /*Form*/
@@ -495,7 +496,7 @@ input[type=submit] {
     width: 100px;
     height: 35px;
     padding: 5px 15px; 
-    background: royalblue; 
+    background: #1E46BE; 
     border: none;
     cursor:pointer;
     color: white;
@@ -505,7 +506,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background: #7b97ea;
+    background: #587ded;
 }
 
 
@@ -658,7 +659,6 @@ $stroke-step: 7%;
 
     .alumni{
         padding: 0vw;
-        padding-top: 10px;
     }
 
 
