@@ -8,7 +8,7 @@ body{
     margin: 0;
     padding: 0;
     line-height: 1.2;
-    font-family: 'Open Sans', sans-serif; 
+    font-family: 'Open Sans', sans-serif;
 }
 
 h1{
@@ -76,8 +76,8 @@ img{
 .container{
     display: grid;
     grid-template-columns: 5% 90% 5%;
-    grid-template-rows: auto auto auto auto auto auto auto; 
-   
+    grid-template-rows: auto auto auto auto auto auto auto;
+
 }
 
 /*nav & footer*/
@@ -85,7 +85,7 @@ nav{
     grid-column: 1/-1;
     grid-row: 1/2;
     background-color: transparent;
-    padding: 15px; 
+    padding: 15px;
     justify-content: center;
     align-content: center;
     flex-direction: row;
@@ -107,12 +107,16 @@ nav #logo{
 
 nav #logo img{
     width: 80px;
-    padding-bottom: 7px;
+    padding-bottom: 10px;
 }
 
 
 nav li{
-    padding-left: 25px;
+    padding-left: 20px;
+}
+
+nav li:first-child{
+    padding-left: 0px;
 }
 
 
@@ -140,7 +144,7 @@ nav a:hover{
 footer{
     background-color: #1C1C1C;
     color: #BDBDBD;
-    grid-column: 1 / -1;  
+    grid-column: 1 / -1;
     grid-row: 7/8;
     text-align: center;
     padding: 20px;
@@ -183,24 +187,24 @@ footer p{
 @keyframes fadeIn {
     0% {opacity: 0;}
     100% {opacity: 1;}
-} 
+}
 
 
 #revolution {
   color: whitesmoke;
-  font-size: 11vw;
+  font-size: 16vw;
   text-shadow:
-    1px 1px 0 #9C9C9C, 
-    2px 2px 0 #9B9B9B, 
-    3px 3px 0 #9A9A9A, 
-    4px 4px 0 #999999, 
-    5px 5px 0 #989898, 
-    6px 6px 1px rgba(0,0,0,.1), 
-    0 0 5px rgba(0,0,0,.1), 
-    1px 1px 3px rgba(0,0,0,.3), 
-    3px 3px 5px rgba(0,0,0,.2), 
-    5px 5px 10px rgba(0,0,0,.25), 
-    10px 10px 10px rgba(0,0,0,.2), 
+    1px 1px 0 #9C9C9C,
+    2px 2px 0 #9B9B9B,
+    3px 3px 0 #9A9A9A,
+    4px 4px 0 #999999,
+    5px 5px 0 #989898,
+    6px 6px 1px rgba(0,0,0,.1),
+    0 0 5px rgba(0,0,0,.1),
+    1px 1px 3px rgba(0,0,0,.3),
+    3px 3px 5px rgba(0,0,0,.2),
+    5px 5px 10px rgba(0,0,0,.25),
+    10px 10px 10px rgba(0,0,0,.2),
     20px 20px 20px rgba(0,0,0,.15);
 }
 
@@ -220,7 +224,6 @@ footer p{
     background-image: url("../images/home/cover3.jpg");
     background-color: #1C1C1C;
     /* Parallax effect */
-    background-attachment:fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size:cover;
@@ -234,7 +237,6 @@ footer p{
     background-image: url("../images/home/ending3.jpg");
     background-color: #1C1C1C;
     /* Parallax effect */
-    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -248,7 +250,6 @@ footer p{
     background-image: url("../images/home/performance3.jpg");
     background-color: #1C1C1C;
     /* Parallax effect */
-    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -262,7 +263,6 @@ footer p{
     background-image: url("../images/home/yotonix3.jpg");
     background-color: #1C1C1C;
     /* Parallax effect */
-    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -277,7 +277,6 @@ footer p{
     background-image: url("../images/media/med3.jpg");
     background-color: #1C1C1C;
     /* Parallax effect */
-    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -298,12 +297,11 @@ footer p{
     grid-column: 2/3;
     grid-row: 4/5;
     display: flex;
-    padding: 5px;
     flex-flow: row wrap;
 }
 
 .photos img{
-    margin: 5px;
+    margin: 7px;
     flex: auto;
 }
 
@@ -320,13 +318,12 @@ footer p{
     grid-column: 2/3;
     grid-row: 6/7;
     display: flex;
-    padding: 5px;
-    flex-flow: row wrap;    
+    flex-flow: row wrap;
     margin-bottom: 50px;
 }
 
 .videos iframe{
-    margin: 5px;
+    margin: 7px;
     flex: auto;
     width: 560px;
     height: 315px;
@@ -340,7 +337,6 @@ footer p{
     background-image: url("../images/members/members4.jpg");
     background-color: #1C1C1C;
     /* Parallax effect */
-    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -361,7 +357,6 @@ footer p{
     grid-column: 2/3;
     grid-row: 4/5;
     display: flex;
-    padding: 5px;
     flex-flow: row wrap;
     justify-content: center;
 }
@@ -370,7 +365,7 @@ footer p{
     vertical-align: top;
     display: inline-block;
     text-align: center;
-    padding: 5px;
+    padding: 7px;
 }
 
 .person img{
@@ -417,7 +412,6 @@ footer p{
     background-image: url("../images/contact/cont4.jpg");
     background-color: #1C1C1C;
     /* Parallax effect */
-    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -456,7 +450,7 @@ footer p{
     vertical-align:middle;
     display: inline;
     font-size: 20px;
-    font-family: 'Open Sans', sans-serif; 
+    font-family: 'Open Sans', sans-serif;
 }
 
 .social a:hover{
@@ -529,8 +523,8 @@ input[type=submit] {
     margin-top: 5px;
     width: 100px;
     height: 35px;
-    padding: 5px 15px; 
-    background: #ffcb05; 
+    padding: 5px 15px;
+    background: #ffcb05;
     border: none;
     cursor:pointer;
     color: #1C1C1C;
@@ -542,62 +536,6 @@ input[type=submit] {
 input[type=submit]:hover {
     background: #FFE16B;
 }
-
-
-/*Advanced CSS*/
-/*
-    
-HTML, BODY {
-    height: 100%;
-}
-
-$colors: #360745, #D61C59, #E7D84B, #EFEAC5, #1B8798;
-
-BODY {
-    background: hsl(200,70,11);
-    background-size: .12em 100%;
-    font: 10em/1 Times;
-}
-
-.text--line {
-    font-size: .5em;
-}
-
-svg {
-    position: absolute;
-    width: 100%;
-     height: 100%;
-}
-
-$max: 5;
-$stroke-step: 7%; 
-.text-copy {
-    fill: none;
-    stroke: white;
-    stroke-dasharray: $stroke-step $stroke-step * ($max - 1);
-    stroke-width: 3px;
-  
-    animation: stroke-offset 9s infinite linear;
-  
-    @for $item from 1 through $max {
-        $stroke-color: nth($colors, $item);
-    
-        &:nth-child(#{$item}) {
-            stroke: $stroke-color;
-            stroke-dashoffset: $stroke-step * $item;
-        }
-    }
-}
-
-@keyframes stroke-offset {
-    50% {
-        stroke-dashoffset: $stroke-step * $max;  
-        stroke-dasharray: 0 $stroke-step * $max*2.5;
-    }
-}
-*/
-
-
 
 
 
@@ -620,12 +558,12 @@ $stroke-step: 7%;
 
     /*grid container*/
     .container{
-        grid-template-columns: 15% 70% 15%;   
+        grid-template-columns: 15% 70% 15%;
     }
 
     /*nav & footer*/
     nav{
-        padding: 20px; 
+        padding: 20px;
         display: flex;
     }
 
@@ -655,6 +593,10 @@ $stroke-step: 7%;
 
 
     /*body*/
+    #revolution {
+      font-size: 14vw;
+    }
+
     .text{
         padding: 0 25vw;
     }
@@ -708,7 +650,7 @@ $stroke-step: 7%;
         text-align: center;
         margin: 0 auto;
     }
-    
+
 }  /*End the media query*/
 
 
@@ -717,7 +659,79 @@ $stroke-step: 7%;
 
 /*DESKTOP SCREEN*/
 @media screen and (min-width: 1200px) {
-    
+
+    #revolution {
+      font-size: 11vw;
+    }
+
+    /* parallax */
+    .cover-image{
+        background-attachment:fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:cover;
+        height: 750px;
+        display: table;
+    }
+
+    .about-image{
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 750px;
+        display: table;
+    }
+
+    .performance-image{
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 750px;
+        display: table;
+    }
+
+    .yotonix-image{
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 750px;
+        display: table;
+    }
+
+    /*media*/
+    .media-image{
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 700px;
+        display: table;
+    }
+
+    /*members*/
+    .members-image{
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 700px;
+        display: table;
+    }
+
+    /*contact*/
+    .contact-image{
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 700px;
+        display: table;
+    }
+
+
     /*contact*/
     fieldset{
         width: 70%;
@@ -745,7 +759,7 @@ $stroke-step: 7%;
         z-index: 1;
     }
 
-    
+
     .title{
         -webkit-transition: initial;
         transition: initial;
