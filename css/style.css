@@ -303,6 +303,7 @@ footer p{
 .photos img{
     margin: 7px;
     flex: auto;
+    align-self: center;
 }
 
 .title-videos{
@@ -327,6 +328,7 @@ footer p{
     flex: auto;
     width: 560px;
     height: 315px;
+    align-self: center;
 }
 
 
