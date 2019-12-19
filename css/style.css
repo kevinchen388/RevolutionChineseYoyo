@@ -282,6 +282,7 @@ footer p{
     background-size: cover;
     height: 700px;
     display: table;
+    width: 100%;
 }
 
 .title-photos{
@@ -344,6 +345,7 @@ footer p{
     background-size: cover;
     height: 700px;
     display: table;
+    width: 100%;
 }
 
 .title-current{
@@ -419,6 +421,7 @@ footer p{
     background-size: cover;
     height: 700px;
     display: table;
+    width: 100%;
 }
 
 .title-social{
