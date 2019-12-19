@@ -229,6 +229,7 @@ footer p{
     background-size:cover;
     height: 750px;
     display: table;
+    width: 100%;
 }
 
 .about-image{
@@ -242,6 +243,7 @@ footer p{
     background-size: cover;
     height: 750px;
     display: table;
+    width: 100%;
 }
 
 .performance-image{
@@ -255,6 +257,7 @@ footer p{
     background-size: cover;
     height: 750px;
     display: table;
+    width: 100%;
 }
 
 .yotonix-image{
@@ -268,6 +271,7 @@ footer p{
     background-size: cover;
     height: 750px;
     display: table;
+    width: 100%;
 }
 
 /*media*/
