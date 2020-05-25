@@ -1,3 +1,5 @@
+/*MOBILE SCREEN*/
+/*GLOBAL STYLES*/
 html{
     scroll-behavior: smooth;
 }
@@ -7,7 +9,7 @@ body{
     font-size: 18px;
     margin: 0;
     padding: 0;
-    line-height: 1.2;
+    line-height: 1.25;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -28,8 +30,7 @@ h3{
     font-size: 26px;
     font-family: 'Open Sans Condensed', sans-serif;
     font-weight: 700;
-    margin-bottom: 2px;
-    margin-top: 15px;
+    margin-bottom: 3px;
     color: whitesmoke;
 }
 
@@ -44,21 +45,30 @@ li{
 img{
     width: 210px;
 }
+.link{
+    color: #ffcb05;
+    text-decoration: none;
+}
+.link:hover{
+    color: #FFE16B;
+}
 
 /*skip*/
 .skip {
     position: absolute;
     top: -40px;
+    border: none;
 }
 
 .skip a{
-    background: white;
+    background: #292929;
+    color: whitesmoke;
     left: 0;
     padding: 6px;
     position: relative;
     top: -40px;
-    -webkit-transition: top 1s ease-out;
-    transition: top 1s ease-out;
+    -webkit-transition: top .5s ease-out;
+    transition: top .5s ease-out;
     z-index: 1;
 }
 
@@ -80,7 +90,7 @@ img{
 
 }
 
-/*nav & footer*/
+/*NAV AND FOOTER*/
 nav{
     grid-column: 1/-1;
     grid-row: 1/2;
@@ -135,7 +145,9 @@ nav a{
 nav .currentpage{
     color: #ffcb05;
 }
-
+nav .currentpage:hover{
+    color: #cfa400;
+}
 nav a:hover{
     color: #BDBDBD;
 }
@@ -147,26 +159,28 @@ footer{
     grid-column: 1 / -1;
     grid-row: 7/8;
     text-align: center;
-    padding: 20px;
+    padding: 25px 20px;
 }
 
 footer a{
-    padding: 7px;
+    padding: 6px;
     color: #BDBDBD;
     text-decoration: none;
     padding-top: 0px;
+    font-size: 22px;
 }
 
 footer a:hover{
-    color: #E6E6E6;
+    color: #ffcb05;
 }
 
 footer p{
-    font-size: 15px;
-    line-height: 1.3;
+    font-size: 14px;
+    line-height: 1.4;
 }
 
-/*body*/
+
+/*HOME PAGE*/
 .title{
     text-align: center;
     display: table-cell;
@@ -222,12 +236,12 @@ footer p{
     grid-column: 1/-1;
     grid-row: 1/3;
     background-image: url("../images/home/cover3.jpg");
-    background-color: #1C1C1C;
+    background-color: #292929;
     /* Parallax effect */
     background-position: center;
     background-repeat: no-repeat;
     background-size:cover;
-    height: 750px;
+    height: 700px;
     display: table;
     width: 100%;
 }
@@ -236,50 +250,7 @@ footer p{
     grid-column: 1/-1;
     grid-row: 3/4;
     background-image: url("../images/home/ending3.jpg");
-    background-color: #1C1C1C;
-    /* Parallax effect */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 750px;
-    display: table;
-    width: 100%;
-}
-
-.performance-image{
-    grid-column: 1/-1;
-    grid-row: 4/5;
-    background-image: url("../images/home/performance3.jpg");
-    background-color: #1C1C1C;
-    /* Parallax effect */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 750px;
-    display: table;
-    width: 100%;
-}
-
-.yotonix-image{
-    grid-column: 1/-1;
-    grid-row: 5/6;
-    background-image: url("../images/home/yotonix3.jpg");
-    background-color: #1C1C1C;
-    /* Parallax effect */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 750px;
-    display: table;
-    width: 100%;
-}
-
-/*media*/
-.media-image{
-    grid-column: 1/-1;
-    grid-row: 1/3;
-    background-image: url("../images/media/med3.jpg");
-    background-color: #1C1C1C;
+    background-color: #292929;
     /* Parallax effect */
     background-position: center;
     background-repeat: no-repeat;
@@ -289,12 +260,55 @@ footer p{
     width: 100%;
 }
 
+.performance-image{
+    grid-column: 1/-1;
+    grid-row: 4/5;
+    background-image: url("../images/home/performance3.jpg");
+    background-color: #292929;
+    /* Parallax effect */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    display: table;
+    width: 100%;
+}
+
+.yotonix-image{
+    grid-column: 1/-1;
+    grid-row: 5/6;
+    background-image: url("../images/home/yotonix3.jpg");
+    background-color: #292929;
+    /* Parallax effect */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    display: table;
+    width: 100%;
+}
+
+
+/*MEDIA PAGE*/
+.media-image{
+    grid-column: 1/-1;
+    grid-row: 1/3;
+    background-image: url("../images/media/med3.jpg");
+    background-color: #292929;
+    /* Parallax effect */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    display: table;
+    width: 100%;
+}
+
 .title-photos{
-    margin-top: 20px;
+    margin: 20px 0px 15px 0px;
     grid-column: 2/3;
     grid-row: 3/4;
     text-align: center;
-    color: #1C1C1C;
     padding: 1vw 5vw;
 }
 
@@ -312,11 +326,10 @@ footer p{
 }
 
 .title-videos{
-    margin-top: 20px;
+    margin: 20px 0px 15px 0px;
     grid-column: 2/3;
     grid-row: 5/6;
     text-align: center;
-    color: #1C1C1C;
     padding: 1vw 5vw;
 }
 
@@ -337,23 +350,23 @@ footer p{
 }
 
 
-/*members*/
+/*MEMBERS PAGE*/
 .members-image{
     grid-column: 1/-1;
     grid-row: 1/3;
     background-image: url("../images/members/members4.jpg");
-    background-color: #1C1C1C;
+    background-color: #292929;
     /* Parallax effect */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 700px;
+    height: 600px;
     display: table;
     width: 100%;
 }
 
 .title-current{
-    margin-top: 20px;
+    margin: 20px 0px 15px 0px;
     color: #1C1C1C;
     grid-column: 2/3;
     grid-row: 3/4;
@@ -374,6 +387,7 @@ footer p{
     display: inline-block;
     text-align: center;
     padding: 7px;
+    margin-bottom: 8px;
 }
 
 .person img{
@@ -386,10 +400,10 @@ footer p{
 }
 
 .title-alumni{
+    margin: 20px 0px 15px 0px;
     grid-column: 2/3;
     grid-row: 5/6;
     text-align: center;
-    margin-top: 20px;
     color: #1C1C1C;
     padding: 1vw 5vw;
 }
@@ -400,6 +414,16 @@ footer p{
     padding: 0 2vw;
     margin: 0 auto;
     margin-bottom: 50px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.year{
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    margin: 0px 25px 30px 25px;
 }
 
 .alumni ul{
@@ -407,33 +431,32 @@ footer p{
 }
 
 .alumni li{
-    line-height: 1.3;
     display: table;
     margin: 0 auto;
 }
 
 
-/*contact*/
+/*CONTACT PAGE*/
 .contact-image{
     grid-column: 1/-1;
     grid-row: 1/3;
     background-image: url("../images/contact/cont4.jpg");
-    background-color: #1C1C1C;
+    background-color: #292929;
     /* Parallax effect */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 700px;
+    height: 600px;
     display: table;
     width: 100%;
 }
 
 .title-social{
+    margin: 20px 0px 15px 0px;
     grid-column: 2/3;
     grid-row: 3/4;
     text-align: center;
     margin-top: 20px;
-    color: #1C1C1C;
     padding: 1vw 5vw;
 }
 
@@ -443,20 +466,20 @@ footer p{
     display: inline;
     text-decoration: none;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .social a{
     display: block;
-    margin: 10px;
     color: #ffcb05;
     text-decoration: none;
-    width: 300px;
+    width: 250px;
     margin: 0 auto;
-    padding: 10px;
+    padding: 8px;
 }
 
 .social a p{
-    vertical-align:middle;
+    vertical-align: middle;
     display: inline;
     font-size: 20px;
     font-family: 'Open Sans', sans-serif;
@@ -468,11 +491,11 @@ footer p{
 
 /*Form*/
 .title-contact{
+    margin: 20px 0px 15px 0px;
     grid-column: 2/3;
     grid-row: 5/6;
     text-align: center;
     margin-top: 20px;
-    color: #1C1C1C;
     padding: 1vw 5vw;
 }
 
@@ -494,38 +517,33 @@ input{
     margin-bottom: 10px;
     border: none;
     border-radius: 20px;
-    padding: 10px;
+    padding: 8px 12px;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     box-sizing: border-box;
 }
 
 input:focus{
-	background-color: #FFFDF5;
-    box-shadow: 0 0 0 2pt #FFE16B;
+    box-shadow: 0 0 0 2pt #ffcb05;
     outline: none;
 }
 
 textarea{
-    height: 100px;
+    height: 200px;
     width: 90%;
     border: none;
     border-radius: 20px;
-    padding: 10px;
+    padding: 8px 12px;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     box-sizing: border-box;
 }
 
 textarea:focus{
-    background-color: #FFFDF5;
-    box-shadow: 0 0 0 2pt #FFE16B;
+    box-shadow: 0 0 0 2pt #ffcb05;
     outline: none;
 }
 
-buttoncontainer{
-    text-align: center;
-}
 
 input[type=submit] {
     display: inline-block;
@@ -540,6 +558,7 @@ input[type=submit] {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     border-radius: 25px;
+    font-weight: 700;
 }
 
 input[type=submit]:hover {
@@ -558,13 +577,16 @@ input[type=submit]:hover {
     }
 
     h2{
-        font-size: 50px;
+        font-size: 55px;
     }
 
     img{
         width: 350px;
     }
-
+    body{
+        font-size: 20px;
+    }
+    
     /*grid container*/
     .container{
         grid-template-columns: 15% 70% 15%;
@@ -575,7 +597,11 @@ input[type=submit]:hover {
         padding: 20px;
         display: flex;
     }
-
+    
+    nav a{
+        font-size: 22px
+    }
+    
     nav ul{
         display: flex;
         justify-content: right;
@@ -599,7 +625,9 @@ input[type=submit]:hover {
         display: inline-block;
         padding-left: 45px;
     }
-
+    footer p{
+        font-size: 16px;
+    }
 
     /*body*/
     #revolution {
@@ -611,19 +639,19 @@ input[type=submit]:hover {
     }
 
     .cover-image{
-        height: 800px;
+        height: 700px;
     }
 
     .about-image{
-        height: 800px;
+        height: 700px;
     }
 
     .performance-image{
-        height: 800px;
+        height: 700px;
     }
 
     .yotonix-image{
-        height: 800px;
+        height: 700px;
     }
 
     /*media*/
@@ -640,10 +668,6 @@ input[type=submit]:hover {
 
     .person img{
         width: 255px;
-    }
-
-    .alumni{
-        padding: 0vw;
     }
 
 
@@ -669,17 +693,25 @@ input[type=submit]:hover {
 /*DESKTOP SCREEN*/
 @media screen and (min-width: 1200px) {
 
+    h2{
+        font-size: 60px;
+    }
+    
     #revolution {
       font-size: 11vw;
     }
-
+    
+    nav a{
+        font-size: 24px
+    }
+    
     /* parallax */
     .cover-image{
         background-attachment:fixed;
         background-position: center;
         background-repeat: no-repeat;
         background-size:cover;
-        height: 750px;
+        height: 800px;
         display: table;
     }
 
@@ -688,7 +720,7 @@ input[type=submit]:hover {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 750px;
+        height: 800px;
         display: table;
     }
 
@@ -697,7 +729,7 @@ input[type=submit]:hover {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 750px;
+        height: 800px;
         display: table;
     }
 
@@ -706,7 +738,7 @@ input[type=submit]:hover {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 750px;
+        height: 800px;
         display: table;
     }
 
@@ -716,7 +748,7 @@ input[type=submit]:hover {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 700px;
+        height: 600px;
         display: table;
     }
 
@@ -726,7 +758,7 @@ input[type=submit]:hover {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 700px;
+        height: 600px;
         display: table;
     }
 
@@ -736,10 +768,9 @@ input[type=submit]:hover {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 700px;
+        height: 600px;
         display: table;
     }
-
 
     /*contact*/
     fieldset{
@@ -756,9 +787,8 @@ input[type=submit]:hover {
     html{
         scroll-behavior: auto; /* Removes scroll animation */
     }
-
     .skip a{
-        background: white;
+        background: #292929;
         left: 0;
         padding: 6px;
         position: absolute;
@@ -767,8 +797,6 @@ input[type=submit]:hover {
         transition: initial;
         z-index: 1;
     }
-
-
     .title{
         -webkit-transition: initial;
         transition: initial;
