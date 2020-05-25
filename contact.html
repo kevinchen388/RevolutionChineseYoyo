@@ -64,14 +64,16 @@
             <div class="contactform">
                 <form name="contract-form" action="https://formspree.io/kevinche@umich.edu" method="POST">
                     <fieldset>
-                        <input type="text" name="Name" id = "name" placeholder="Full Name" aria-label="Full Name"><br/>
+                        <input type="text" name="Name" id = "name" placeholder="Your name" aria-label="Full Name"><br/>
 
-                        <input type="email" name="Email" id = "email" placeholder="Email Adress" aria-label="Email Address"><br/>
+                        <input type="email" name="_replyto" id = "email" placeholder="Your email" aria-label="Email Address" ><br/>
 
-                        <input type="text" name="Subject" id = "subject" placeholder="Subject" aria-label="Subject"><br>
+                        <input type="subject" name="_subject" id = "subject" placeholder="Subject" aria-label="Subject"><br>
 
                         <textarea placeholder="Message" name="Message" rows = "10" aria-label="Message"></textarea>
 
+                        <input type="text" name="_gotcha" style="display:none"/>
+                        
                         <div class = "buttoncontainer">
                             <input type = "submit" id = "button" value = "Send">
                         </div>
