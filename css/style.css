@@ -111,13 +111,13 @@ nav ul{
 
 nav #logo{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 80px;
+    margin: 0 auto;
+    margin-bottom: 10px;
 }
 
 nav #logo img{
     width: 80px;
-    padding-bottom: 10px;
 }
 
 
@@ -130,7 +130,7 @@ nav li:first-child{
 }
 
 
-nav a{
+nav li a{
     color: white;
     text-decoration: none;
     font-size: 21px;
@@ -614,11 +614,10 @@ input[type=submit]:hover {
         margin-left: 5%;
         width: 110px;
     }
-
+    
     nav #logo img{
         width: 110px;
         height: auto;
-        padding-bottom: 0px;
     }
 
     nav li{
@@ -672,7 +671,6 @@ input[type=submit]:hover {
 
 
     /*contact*/
-
     .contactform{
         margin: 10px;
         margin-bottom: 50px;
