@@ -16,6 +16,7 @@ body{
 h1{
     font-size: 64px;
     font-family: 'Open Sans Condensed', sans-serif;
+    line-height: .80;
 }
 
 h2{
@@ -205,21 +206,21 @@ footer p{
 
 
 #revolution {
-  color: whitesmoke;
-  font-size: 14vw;
-  text-shadow:
-    1px 1px 0 #9C9C9C,
-    2px 2px 0 #9B9B9B,
-    3px 3px 0 #9A9A9A,
-    4px 4px 0 #999999,
-    5px 5px 0 #989898,
-    6px 6px 1px rgba(0,0,0,.1),
-    0 0 5px rgba(0,0,0,.1),
-    1px 1px 3px rgba(0,0,0,.3),
-    3px 3px 5px rgba(0,0,0,.2),
-    5px 5px 10px rgba(0,0,0,.25),
-    10px 10px 10px rgba(0,0,0,.2),
-    20px 20px 20px rgba(0,0,0,.15);
+    color: whitesmoke;
+    font-size: 14vw;
+    text-shadow:
+        1px 1px 0 #9C9C9C,
+        2px 2px 0 #9B9B9B,
+        3px 3px 0 #9A9A9A,
+        4px 4px 0 #999999,
+        5px 5px 0 #989898,
+        6px 6px 1px rgba(0,0,0,.1),
+        0 0 5px rgba(0,0,0,.1),
+        1px 1px 3px rgba(0,0,0,.3),
+        3px 3px 5px rgba(0,0,0,.2),
+        5px 5px 10px rgba(0,0,0,.25),
+        10px 10px 10px rgba(0,0,0,.2),
+        20px 20px 20px rgba(0,0,0,.15);
 }
 
 
