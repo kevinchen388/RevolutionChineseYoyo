@@ -250,7 +250,7 @@ footer p{
 .about-image{
     grid-column: 1/-1;
     grid-row: 3/4;
-    background-image: url("../images/home/ending4.jpg");
+    background-image: url("../images/home/spicyintro.jpg");
     background-color: #292929;
     /* Parallax effect */
     background-position: center;
