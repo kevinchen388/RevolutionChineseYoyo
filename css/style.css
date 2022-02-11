@@ -294,7 +294,7 @@ footer p{
 .media-image{
     grid-column: 1/-1;
     grid-row: 1/3;
-    background-image: url("../images/media/med3.jpg");
+    background-image: url("../images/media/pre-2021/med3.jpg");
     background-color: #292929;
     /* Parallax effect */
     background-position: center;
